@@ -1,8 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable consistent-return */
 /* eslint-disable camelcase */
 import React, { useState } from 'react';
-import { TextField, Button, DialogActions } from '@material-ui/core';
+import { TextField, Button, DialogActions, Typography } from '@material-ui/core';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { TextField as TextMuiField } from '@mui/material';
 import DateTimePicker from '@mui/lab/DateTimePicker';
@@ -12,17 +13,27 @@ import {
   SchedulerHelpers,
 } from '@aldabil/react-scheduler';
 import { LocalizationProvider } from '@mui/lab';
+import { useSelector } from 'react-redux';
+import axios from 'axios';
+import { RootState } from '../../store/store';
+import { IEvent } from '../../types/EventType';
+import Events from './Events';
 
 interface CustomEditorProps {
   scheduler: SchedulerHelpers;
 }
 const CustomEditor = ({ scheduler }: CustomEditorProps) => {
   const event = scheduler.edited;
-
+  const userData = useSelector((state: RootState) => state.userData);
+  const config = {
+    headers: { Authorization: `Bearer ${userData.token}` },
+  };
   // Make your own form/state
   const [state, setState] = useState({
+    event_id: event?.event_id || Math.random().toString(),
     title: event?.title || '',
-    description: event?.description || '',
+    creator: userData.name,
+    course: userData.course,
     group: event?.group || '',
     location: event?.location || '',
     start: event?.start || scheduler.state.start.value,
@@ -53,18 +64,22 @@ const CustomEditor = ({ scheduler }: CustomEditorProps) => {
          * start: Date|string
          * end: Date|string
          */
+
         setTimeout(() => {
           res({
-            event_id: event?.event_id || Math.random(),
-            title: state.title,
+            event_id: event?.event_id.toString() || Math.random().toString(),
+            title: `${state.title} - ${state.location}`,
             start: state.start,
             end: state.end,
-            description: state.description,
             group: state.group,
             location: state.location,
+            creator: userData.name,
+            course: userData.course,
           });
-        }, 3000);
+        }, 0);
       })) as ProcessedEvent;
+      // await axios.post(`${process.env.REACT_APP_BACKEND_API}/v1/events`, state, config);
+      window.localStorage.setItem('Events', JSON.stringify(state));
       scheduler.onConfirm(addedUpdatedEvent, event ? 'edit' : 'create');
       scheduler.close();
     } finally {
@@ -81,7 +96,7 @@ const CustomEditor = ({ scheduler }: CustomEditorProps) => {
         >
           <TextField
             style={{ marginBottom: '2rem' }}
-            label="כותרת"
+            label="שם קורס"
             value={state.title}
             onChange={(e) => handleChange(e.target.value, 'title')}
             helperText="at least 3 chars"
@@ -125,17 +140,21 @@ const CustomEditor = ({ scheduler }: CustomEditorProps) => {
   );
 };
 
+
 function Calender() {
+
+  const Events1 = window.localStorage.getItem('Events') ?? JSON.stringify(Events);
+  console.log(Events1);
   return (
     <Scheduler
+      events={Events}
       customEditor={(scheduler) => <CustomEditor scheduler={scheduler} />}
       viewerExtraComponent={(fields, event) => (
         <div>
-          <p>Useful to render custom fields...</p>
-          <p>
-            Description:
-            {event.location || 'Nothing...'}
-          </p>
+          <Typography>
+            יוצר:
+            {event.creator || event.location}
+          </Typography>
         </div>
       )}
     />

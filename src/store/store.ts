@@ -1,11 +1,12 @@
+/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './Reducers/CounterSlice';
+import EventsSlice from './Reducers/EventsSlice';
 import userSlice from './Reducers/UserSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    events: EventsSlice,
     userData: userSlice,
   },
 });

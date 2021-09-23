@@ -28,7 +28,7 @@ const NavBar:React.FC = (props) => {
             >
               <MixedText boldedText="Luz" normalText="Control" />
             </IconButton>
-            <Typography>{` שלום ${userData.email}`}</Typography>
+            <Typography>{` שלום ${userData.name}`}</Typography>
           </div>
           <div>
             <Button component={Link} to="/Calender" color="inherit" style={{ direction: 'rtl' }}>מה לוז?</Button>

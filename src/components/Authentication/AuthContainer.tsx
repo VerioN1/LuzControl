@@ -11,7 +11,6 @@ const AuthContainer : React.FC = (props) => {
       <Login />
     );
   }
-  console.log(authState);
   return (
     <>
       {props.children}

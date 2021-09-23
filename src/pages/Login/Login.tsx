@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 // MUI Core
 import Button from '@mui/material/Button';
@@ -15,6 +15,7 @@ import axios from 'axios';
 import { useMutation } from 'react-query';
 import Logo from '../../assets/Logo';
 import { login } from '../../store/Reducers/UserSlice';
+import Register from '../Register/Register';
 
 interface FormData {
   email: string;
@@ -38,6 +39,7 @@ const loginUser = async (userData: FormData) => {
 };
 
 const Login: React.FC = () => {
+  const [isRegistered, setRegistered] = useState(true);
   const { handleSubmit, register } = useForm<FormData>();
   const history = useHistory();
   const classes = useStyles();
@@ -45,64 +47,80 @@ const Login: React.FC = () => {
 
   const mutation = useMutation((data : FormData) => loginUser(data));
 
-  const onSubmit = handleSubmit((data : FormData) => {
-    mutation.mutate(data);
-    if (mutation.isSuccess) {
-      console.log(mutation.data);
-      history.push('/home');
-      dispatch(login({ email: data.email }));
-    } else {
+  const onSubmit = handleSubmit(async (data : FormData) => {
+    try {
+      await mutation.mutateAsync(data);
+      if (mutation.isSuccess) {
+        console.log(mutation.data);
+        history.push('/Calender');
+        dispatch(login({
+          email: mutation.data.user.email,
+          name: mutation.data.user.name,
+          course: mutation.data.user.course,
+          token: mutation.data.tokens.access.token,
+          isAuthenticated: true,
+        }));
+      }
+    } catch (e) {
       alert('Incorrect email or password! please try again');
     }
   });
 
   return (
-    <div style={{
-      display: 'flex', flexDirection: 'column', backgroundColor: '#EAEAEA', padding: '60px', borderRadius: '10px',
-    }}
-    >
-      <Logo />
-      <Container className={classes.container} maxWidth="xs">
-        <form onSubmit={onSubmit}>
-          <Grid container spacing={3}>
-            <Grid item xs={12}>
-              <Grid container spacing={2}>
+    <>
+      {
+      isRegistered ? (
+
+        <div style={{
+          display: 'flex', flexDirection: 'column', backgroundColor: '#EAEAEA', padding: '60px', borderRadius: '10px',
+        }}
+        >
+          <Logo />
+          <Container className={classes.container} maxWidth="xs">
+            <form onSubmit={onSubmit}>
+              <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    {...register('email')}
-                    label="אימייל"
-                    name="email"
-                    size="small"
-                    variant="outlined"
-                  />
+                  <Grid container spacing={2}>
+                    <Grid item xs={12}>
+                      <TextField
+                        fullWidth
+                        {...register('email')}
+                        label="אימייל"
+                        name="email"
+                        size="small"
+                        variant="outlined"
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        fullWidth
+                        {...register('password')}
+                        label="סיסמה"
+                        name="password"
+                        size="small"
+                        type="password"
+                        variant="outlined"
+                      />
+                    </Grid>
+                  </Grid>
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField
-                    fullWidth
-                    {...register('password')}
-                    label="סיסמה"
-                    name="password"
-                    size="small"
-                    type="password"
-                    variant="outlined"
-                  />
+                  <Button color="primary" fullWidth type="submit" variant="contained" disabled={mutation.isLoading}>
+                    {mutation.isLoading ? (<CircularProgress size={14} />) : 'התחבר'}
+                  </Button>
+                  <Typography variant="h6">או</Typography>
+                  <Button color="primary" fullWidth variant="contained" onClick={() => setRegistered(false)}>
+                    צור משתמש
+                  </Button>
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              <Button color="primary" fullWidth type="submit" variant="contained" disabled={mutation.isLoading}>
-                {mutation.isLoading ? (<CircularProgress size={14} />) : 'התחבר'}
-              </Button>
-              <Typography variant="h6">או</Typography>
-              <Button color="primary" fullWidth variant="contained">
-                צור משתמש
-              </Button>
-            </Grid>
-          </Grid>
-        </form>
-      </Container>
-    </div>
+            </form>
+          </Container>
+        </div>
+      )
+        : (<Register setRegisterState={setRegistered} />)
+    }
+    </>
   );
 };
 

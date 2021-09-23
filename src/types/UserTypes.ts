@@ -1,7 +1,9 @@
 export interface IUserData {
     email: string,
-    name?: string,
-    courseName?: string,
+    name: string,
+    course: string,
+    token: string,
+    isAuthenticated: boolean,
     icon?: string,
-    role?: string
+    role?: string,
 }
