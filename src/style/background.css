@@ -1,0 +1,1271 @@
+.test-bg{
+    /* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+
+
+/* Ellipse 94 */
+
+position: absolute;
+width: 70.68px;
+height: 71.27px;
+left: 647.44px;
+top: 937.49px;
+
+background: rgba(255, 166, 158, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 73 */
+
+position: absolute;
+width: 147.26px;
+height: 120.9px;
+left: 631.26px;
+top: 925.72px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 79 */
+
+position: absolute;
+width: 211.68px;
+height: 186.17px;
+left: 744.68px;
+top: 648.43px;
+
+background: rgba(255, 166, 158, 0.7);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 80 */
+
+position: absolute;
+width: 100.64px;
+height: 96.91px;
+left: 713.59px;
+top: 768.72px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 92 */
+
+position: absolute;
+width: 100.64px;
+height: 96.91px;
+left: 778.16px;
+top: 803px;
+
+background: rgba(172, 147, 225, 0.71);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1260px;
+top: 757px;
+
+
+
+/* Text */
+
+position: absolute;
+width: 491px;
+height: 88px;
+left: -484px;
+top: 12px;
+
+
+
+
+/* Ellipse 8 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 196.38px;
+top: 805.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 87 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 316.38px;
+top: 1007.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 9 */
+
+position: absolute;
+width: 300.42px;
+height: 272.21px;
+left: 261.57px;
+top: 879.32px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 68 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 305.69px;
+top: 703.43px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 88 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 222.69px;
+top: 1075.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 89 */
+
+position: absolute;
+width: 118.07px;
+height: 105.53px;
+left: 339.4px;
+top: 1048.24px;
+
+background: rgba(172, 147, 225, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 69 */
+
+position: absolute;
+width: 182.29px;
+height: 170.67px;
+left: 1088.38px;
+top: 792px;
+
+background: rgba(147, 225, 216, 0.8);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 70 */
+
+position: absolute;
+width: 300.42px;
+height: 285.3px;
+left: 1153.57px;
+top: 714.65px;
+
+background: rgba(255, 166, 158, 0.7);
+transform: matrix(1, 0, -0.01, 1, 0, 0);
+
+
+/* Ellipse 71 */
+
+position: absolute;
+width: 145.76px;
+height: 145.1px;
+left: 1197.69px;
+top: 899px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 72 */
+
+position: absolute;
+width: 86.14px;
+height: 75.75px;
+left: 663.21px;
+top: 892.95px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.83, -0.45, 0.63, -0.86, 0, 0);
+
+
+/* Ellipse 95 */
+
+position: absolute;
+width: 147.26px;
+height: 120.9px;
+left: 540.26px;
+top: 923.9px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 74 */
+
+position: absolute;
+width: 68.87px;
+height: 64.4px;
+left: 609.63px;
+top: 847.6px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.83, -0.45, 0.63, -0.86, 0, 0);
+
+
+/* Ellipse 75 */
+
+position: absolute;
+width: 147.42px;
+height: 137.21px;
+left: 1160.81px;
+top: 733.46px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.84, 0.52, 0.55, 0.85, 0, 0);
+
+
+/* Ellipse 76 */
+
+position: absolute;
+width: 250.96px;
+height: 221.99px;
+left: 1120px;
+top: 714px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 77 */
+
+position: absolute;
+width: 117.88px;
+height: 116.65px;
+left: 1072.07px;
+top: 819.14px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.84, 0.52, 0.55, 0.85, 0, 0);
+
+
+/* Ellipse 78 */
+
+position: absolute;
+width: 125.86px;
+height: 113.99px;
+left: 790.61px;
+top: 698.9px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 93 */
+
+position: absolute;
+width: 125.86px;
+height: 113.99px;
+left: 924px;
+top: 769px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 84 */
+
+position: absolute;
+width: 135.62px;
+height: 122.83px;
+left: 1023.59px;
+top: 660.85px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 85 */
+
+position: absolute;
+width: 228.1px;
+height: 200.61px;
+left: 974.1px;
+top: 606.46px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 91 */
+
+position: absolute;
+width: 172.67px;
+height: 144.96px;
+left: 1120px;
+top: 919px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 86 */
+
+position: absolute;
+width: 100.64px;
+height: 96.91px;
+left: 939.08px;
+top: 726.72px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 90 */
+
+position: absolute;
+width: 100.64px;
+height: 96.91px;
+left: 855.16px;
+top: 775px;
+
+background: rgba(147, 225, 216, 0.71);
+transform: matrix(-0.84, 0.48, 0.59, 0.86, 0, 0);
+
+
+/* Ellipse 81 */
+
+position: absolute;
+width: 182.29px;
+height: 170.67px;
+left: -49.62px;
+top: 799px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 82 */
+
+position: absolute;
+width: 300.42px;
+height: 285.3px;
+left: -2.43px;
+top: 702.6px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, 1, 0, 0);
+
+
+/* Ellipse 83 */
+
+position: absolute;
+width: 145.76px;
+height: 145.1px;
+left: 59.69px;
+top: 906px;
+
+background: rgba(255, 166, 158, 0.71);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 96 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 1287.38px;
+top: 517.58px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 97 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 1389.38px;
+top: 700.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 98 */
+
+position: absolute;
+width: 300.42px;
+height: 272.21px;
+left: 1352.57px;
+top: 591.38px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 99 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 1396.69px;
+top: 415.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 100 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 1295.69px;
+top: 768.49px;
+
+background: rgba(172, 147, 225, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 101 */
+
+position: absolute;
+width: 118.07px;
+height: 105.53px;
+left: 1412.4px;
+top: 741.24px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 102 */
+
+position: absolute;
+width: 147.26px;
+height: 120.9px;
+left: 1657.26px;
+top: 629.9px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 103 */
+
+position: absolute;
+width: 182.29px;
+height: 170.67px;
+left: 1023.38px;
+top: 492px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 104 */
+
+position: absolute;
+width: 300.42px;
+height: 285.3px;
+left: 1088.57px;
+top: 414.65px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, 1, 0, 0);
+
+
+/* Ellipse 105 */
+
+position: absolute;
+width: 145.76px;
+height: 145.1px;
+left: 1132.69px;
+top: 599px;
+
+background: rgba(147, 225, 216, 0.71);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 106 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 142.38px;
+top: 186.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 107 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 244.38px;
+top: 369.47px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 110 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 150.69px;
+top: 437.43px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 111 */
+
+position: absolute;
+width: 118.07px;
+height: 105.53px;
+left: 267.4px;
+top: 410.19px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 112 */
+
+position: absolute;
+width: 147.26px;
+height: 120.9px;
+left: 468.26px;
+top: 285.84px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 113 */
+
+position: absolute;
+width: 182.29px;
+height: 170.67px;
+left: -121.62px;
+top: 160.95px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 114 */
+
+position: absolute;
+width: 300.42px;
+height: 285.3px;
+left: -56.43px;
+top: 83.6px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, 1, 0, 0);
+
+
+/* Ellipse 115 */
+
+position: absolute;
+width: 145.76px;
+height: 145.1px;
+left: -12.31px;
+top: 267.95px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 116 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 1117.38px;
+top: 205.58px;
+
+background: rgba(255, 166, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 117 */
+
+position: absolute;
+width: 179.99px;
+height: 165.12px;
+left: 1219.38px;
+top: 388.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 118 */
+
+position: absolute;
+width: 300.42px;
+height: 272.21px;
+left: 1182.57px;
+top: 279.38px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 119 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 1226.69px;
+top: 103.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 120 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 1125.69px;
+top: 456.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 121 */
+
+position: absolute;
+width: 118.07px;
+height: 105.53px;
+left: 1242.4px;
+top: 429.24px;
+
+background: rgba(255, 166, 158, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 159 */
+
+position: absolute;
+width: 118.07px;
+height: 105.53px;
+left: 957.4px;
+top: 570.24px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Ellipse 122 */
+
+position: absolute;
+width: 147.26px;
+height: 120.9px;
+left: 1443.26px;
+top: 304.9px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 123 */
+
+position: absolute;
+width: 182.29px;
+height: 170.67px;
+left: 853.38px;
+top: 180px;
+
+background: rgba(255, 166, 158, 0.8);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 124 */
+
+position: absolute;
+width: 300.42px;
+height: 285.3px;
+left: 918.57px;
+top: 102.65px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, 1, 0, 0);
+
+
+/* Ellipse 125 */
+
+position: absolute;
+width: 145.76px;
+height: 145.1px;
+left: 962.69px;
+top: 287px;
+
+background: rgba(147, 225, 216, 0.71);
+transform: matrix(0.85, 0.53, -0.54, 0.85, 0, 0);
+
+
+/* Ellipse 126 */
+
+position: absolute;
+width: 187.79px;
+height: 168.13px;
+left: 766.91px;
+top: 131.58px;
+
+background: rgba(147, 225, 216, 0.8);
+transform: matrix(-0.83, -0.47, 0.6, -0.86, 0, 0);
+
+
+/* Ellipse 127 */
+
+position: absolute;
+width: 187.79px;
+height: 168.13px;
+left: 658.96px;
+top: 314.53px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.83, -0.47, 0.6, -0.86, 0, 0);
+
+
+/* Ellipse 128 */
+
+position: absolute;
+width: 317.93px;
+height: 272.21px;
+left: 697.93px;
+top: 205.38px;
+
+background: rgba(255, 166, 158, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 129 */
+
+position: absolute;
+width: 150.16px;
+height: 142.94px;
+left: 651.23px;
+top: 29.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.83, -0.47, 0.6, -0.86, 0, 0);
+
+
+/* Ellipse 130 */
+
+position: absolute;
+width: 150.16px;
+height: 142.94px;
+left: 758.11px;
+top: 382.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.83, -0.47, 0.6, -0.86, 0, 0);
+
+
+/* Ellipse 131 */
+
+position: absolute;
+width: 123.18px;
+height: 107.45px;
+left: 634.6px;
+top: 355.24px;
+
+background: rgba(147, 225, 216, 0.71);
+transform: matrix(-0.83, -0.47, 0.6, -0.86, 0, 0);
+
+
+/* Ellipse 132 */
+
+position: absolute;
+width: 155.84px;
+height: 120.9px;
+left: 422.05px;
+top: 230.9px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 133 */
+
+position: absolute;
+width: 190px;
+height: 173.58px;
+left: 1046.29px;
+top: 106px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(-0.84, 0.49, 0.57, 0.85, 0, 0);
+
+
+/* Ellipse 158 */
+
+position: absolute;
+width: 190px;
+height: 173.58px;
+left: 991.71px;
+top: 477px;
+
+background: rgba(255, 166, 158, 0.8);
+transform: matrix(-0.84, 0.49, 0.57, 0.85, 0, 0);
+
+
+/* Ellipse 134 */
+
+position: absolute;
+width: 317.93px;
+height: 285.3px;
+left: 977.31px;
+top: 28.65px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 135 */
+
+position: absolute;
+width: 151.92px;
+height: 147.58px;
+left: 930.61px;
+top: 213px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(-0.84, 0.49, 0.57, 0.85, 0, 0);
+
+
+/* Ellipse 156 */
+
+position: absolute;
+width: 169.73px;
+height: 166.09px;
+left: 958.51px;
+top: -97px;
+
+background: rgba(172, 147, 225, 0.8);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 149 */
+
+position: absolute;
+width: 133.74px;
+height: 136.36px;
+left: 833.15px;
+top: 124.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 155 */
+
+position: absolute;
+width: 135.71px;
+height: 141.21px;
+left: 370.15px;
+top: 212.95px;
+
+background: rgba(172, 147, 225, 0.71);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 143 */
+
+position: absolute;
+width: 169.73px;
+height: 166.09px;
+left: 475.51px;
+top: 144px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 153 */
+
+position: absolute;
+width: 169.73px;
+height: 166.09px;
+left: -24.49px;
+top: 297.95px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 154 */
+
+position: absolute;
+width: 271.26px;
+height: 285.3px;
+left: 186.42px;
+top: 338.6px;
+
+background: rgba(172, 147, 225, 0.7);
+transform: matrix(1, 0, 0, 1, 0, 0);
+
+
+/* Ellipse 145 */
+
+position: absolute;
+width: 135.71px;
+height: 141.21px;
+left: 440.15px;
+top: 522px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 157 */
+
+position: absolute;
+width: 135.71px;
+height: 141.21px;
+left: 1051.15px;
+top: 371px;
+
+background: rgba(172, 147, 225, 0.71);
+transform: matrix(0.86, 0.59, -0.48, 0.84, 0, 0);
+
+
+/* Ellipse 108 */
+
+position: absolute;
+width: 300.42px;
+height: 272.21px;
+left: 207.57px;
+top: 260.32px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 109 */
+
+position: absolute;
+width: 143.92px;
+height: 140.39px;
+left: 269.69px;
+top: 103.49px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.84, -0.5, -0.57, -0.85, 0, 0);
+
+
+/* Group 1075 */
+
+position: absolute;
+width: 511.71px;
+height: 430px;
+left: 410px;
+top: 266px;
+
+
+
+/* Ellipse 160 */
+
+position: absolute;
+width: 509.22px;
+height: 428.96px;
+left: 919.22px;
+top: 267.05px;
+
+background: rgba(233, 244, 255, 0.8);
+border-radius: 5px;
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Ellipse 136 */
+
+position: absolute;
+width: 167.25px;
+height: 160.38px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 137 */
+
+position: absolute;
+width: 167.25px;
+height: 160.38px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 138 */
+
+position: absolute;
+width: 271.26px;
+height: 272.21px;
+
+background: rgba(255, 166, 158, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 139 */
+
+position: absolute;
+width: 133.74px;
+height: 136.36px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 140 */
+
+position: absolute;
+width: 133.74px;
+height: 136.36px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 141 */
+
+position: absolute;
+width: 109.71px;
+height: 102.5px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 142 */
+
+position: absolute;
+width: 132.96px;
+height: 120.9px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 144 */
+
+position: absolute;
+width: 271.26px;
+height: 285.3px;
+
+background: rgba(147, 225, 216, 0.7);
+transform: matrix(1, 0, 0, 1, 0, 0);
+
+
+/* Ellipse 150 */
+
+position: absolute;
+width: 133.74px;
+height: 136.36px;
+
+background: rgba(255, 166, 158, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 151 */
+
+position: absolute;
+width: 109.71px;
+height: 102.5px;
+
+background: rgba(167, 225, 147, 0.71);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 152 */
+
+position: absolute;
+width: 132.96px;
+height: 120.9px;
+
+background: rgba(223, 147, 225, 0.7);
+transform: matrix(-1, 0, 0.01, -1, 0, 0);
+
+
+/* Ellipse 148 */
+
+position: absolute;
+width: 271.26px;
+height: 272.21px;
+
+background: rgba(172, 147, 225, 0.7);
+transform: matrix(1, 0, -0.01, -1, 0, 0);
+
+
+/* Ellipse 146 */
+
+position: absolute;
+width: 167.25px;
+height: 160.38px;
+
+background: rgba(255, 245, 158, 0.8);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Ellipse 147 */
+
+position: absolute;
+width: 167.25px;
+height: 160.38px;
+
+background: rgba(147, 225, 216, 0.8);
+transform: matrix(0.85, -0.56, -0.51, -0.84, 0, 0);
+
+
+/* Group 1076 */
+
+position: absolute;
+width: 627.04px;
+height: 526.91px;
+
+
+
+/* Group 1075 */
+
+position: absolute;
+width: 627.04px;
+height: 526.91px;
+
+
+
+/* Ellipse 160 */
+
+position: absolute;
+width: 623.98px;
+height: 525.64px;
+
+background: rgba(233, 244, 255, 0.8);
+transform: matrix(-1, 0, 0.01, 1, 0, 0);
+
+
+/* Group 1074 */
+
+position: absolute;
+width: 479px;
+height: 102px;
+
+
+
+/* Group 1073 */
+
+position: absolute;
+width: 98px;
+height: 66.18px;
+
+
+
+/* Ellipse 10 */
+
+position: absolute;
+width: 14.01px;
+height: 14.98px;
+
+background: rgba(167, 225, 147, 0.8);
+transform: rotate(-0.82deg);
+
+
+/* Ellipse 11 */
+
+position: absolute;
+width: 24px;
+height: 20px;
+
+background: #DF93E1;
+
+
+/* Ellipse 12 */
+
+position: absolute;
+width: 29px;
+height: 25px;
+
+background: rgba(229, 107, 111, 0.8);
+
+
+/* Ellipse 13 */
+
+position: absolute;
+width: 14.04px;
+height: 10.89px;
+
+background: rgba(167, 225, 147, 0.8);
+transform: matrix(0.99, 0.1, -0.14, 0.99, 0, 0);
+
+
+/* Ellipse 14 */
+
+position: absolute;
+width: 48px;
+height: 39px;
+
+background: rgba(147, 225, 216, 0.7);
+
+
+/* Ellipse 15 */
+
+position: absolute;
+width: 31px;
+height: 25px;
+
+background: rgba(255, 245, 158, 0.8);
+
+
+/* LuzControl */
+
+position: absolute;
+width: 381px;
+height: 102px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 84px;
+letter-spacing: -0.02em;
+
+color: #355070;
+
+backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+
+}

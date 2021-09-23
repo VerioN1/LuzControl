@@ -1,0 +1,21 @@
+.fullscreen-flex{
+    height: 89%;
+    width: 100vw;
+    display: flex;
+    overflow: scroll;
+}
+body{
+    margin: 0;
+    display: flex;
+}
+#root{
+    display: inherit;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.middle-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

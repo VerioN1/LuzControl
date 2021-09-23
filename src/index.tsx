@@ -1,105 +1,49 @@
-import './utilities/polyfill';
-
-import localforage from 'localforage';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider, connect } from 'react-redux';
-import { applyMiddleware, createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { createLogger } from 'redux-logger';
-import { PersistConfig, persistReducer, persistStore } from 'redux-persist';
-import { PersistGate } from 'redux-persist/integration/react';
-import thunk from 'redux-thunk';
-import { ThemeProvider } from 'styled-components';
+import { Provider } from 'react-redux';
 
-import { CssBaseline, Typography, withWidth } from '@material-ui/core';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { StylesProvider } from '@material-ui/styles';
+import {
+  ThemeProvider, createTheme,
+  StylesProvider,
+  jssPreset,
+} from '@material-ui/core/styles';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import rtl from 'jss-rtl';
+import { create } from 'jss';
+import { store } from './store/store';
+import AppWrapper from './AppWrapper';
 
-import App from './App';
-import rootReducer, { RootState } from './reducers';
-import registerServiceWorker from './utilities/registerServiceWorker';
+const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
-// PWA with service worker in production mode
-registerServiceWorker();
-
-const theme = createMuiTheme({
+const darkTheme = createTheme({
+  direction: 'rtl',
   palette: {
     primary: {
-      light: '#e5e5e5',
-      main: '#727272',
-      dark: '#363839',
-      contrastText: '#fff',
+      main: '#DF93E1',
     },
     secondary: {
-      light: '#ff5e50',
-      main: '#e41e26',
-      dark: '#a90000',
-      contrastText: '#fff',
+      light: '#0066ff',
+      main: '#355070',
+      contrastText: '#FFFFFF',
     },
+    contrastThreshold: 3,
+    // Used by the functions below to shift a color's luminance by approximately
+    // two indexes within its tonal palette.
+    // E.g., shift from Red 500 to Red 300 or Red 700.
+    tonalOffset: 0.2,
   },
 });
+const queryClient = new QueryClient();
 
-// Apply Redux wrappers
-const persistConfig: PersistConfig<any> = {
-  key: 'root',
-  version: 1,
-  storage: localforage,
-  blacklist: [],
-};
-const persistedReducer = persistReducer(persistConfig, rootReducer());
-
-const middleware = process.env.NODE_ENV === 'development'
-  ? composeWithDevTools(applyMiddleware(createLogger(), thunk))
-  : applyMiddleware(thunk);
-const store = createStore(persistedReducer, {}, middleware);
-
-if (module.hot) {
-  module.hot.accept('./reducers', () => {
-    // eslint-disable-next-line global-require
-    store.replaceReducer(require('./reducers/index'));
-  });
-}
-
-// Function to render the wrapped app
-const renderApp = (Component: React.ComponentType) => {
-  // Apply MaterialUI theme and other wrappers
-  const AppWithWidth = withWidth()(Component);
-
-  /* eslint-disable react/jsx-props-no-spreading */
-  const WrappedApp = (props: object) => (
-    <ThemeProvider theme={theme}>
-      <StylesProvider injectFirst>
-        <CssBaseline />
-        <AppWithWidth {...props} />
-      </StylesProvider>
-    </ThemeProvider>
-  );
-
-  // Connect to Redux store
-  const ConnectedApp = connect((state: RootState) => ({
-    todoList: state.todoList,
-    email: state.email,
-  }))(WrappedApp);
-
-  ReactDOM.render((
-    <Provider store={store}>
-      <PersistGate
-        loading={<Typography>Loading...</Typography>}
-        persistor={persistor}
-      />
-      <ConnectedApp />
-    </Provider>
-  ), document.getElementById('root'));
-};
-
-// Rehydrate store, then render app
-const persistor = persistStore(store, {}, () => renderApp(App as any));
-
-// Hot reload
-if (module.hot) {
-  module.hot.accept('./App', () => {
-    // eslint-disable-next-line global-require
-    renderApp(require('./App').default);
-  });
-}
+ReactDOM.render(
+  <Provider store={store}>
+    <StylesProvider jss={jss}>
+      <ThemeProvider theme={darkTheme}>
+        <QueryClientProvider client={queryClient}>
+          <AppWrapper />
+        </QueryClientProvider>
+      </ThemeProvider>
+    </StylesProvider>
+  </Provider>,
+  document.getElementById('root'),
+);
